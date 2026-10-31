@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clovermanhikes</title>
+<meta name="description" content="Forestry, games, and community from Southwest Washington.">
+<meta property="og:title" content="clovermanhikes">
+<meta property="og:description" content="Forestry, games, and community from Southwest Washington.">
+<meta name="theme-color" content="#16211a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 6 17h5l-6 8h22l-6-8h5z' fill='%235f8f5a'/%3E%3Crect x='14.5' y='25' width='3' height='5' fill='%23c8784f'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #16211a;
+    --card: #1d2b22;
+    --line: #2c3d31;
+    --text: #d8d0c0;
+    --muted: #9fa89a;
+    --accent: #c8784f;
+    --leaf: #7fae76;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f4f1ea;
+      --card: #ffffff;
+      --line: #e1dccf;
+      --text: #1f2a22;
+      --muted: #5c665d;
+      --accent: #a8572f;
+      --leaf: #3f6b3a;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 72px 0 48px; }
+  h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; line-height: 1.2; }
+  h1 { font-size: clamp(2.2rem, 7vw, 3.2rem); }
+  .lede { color: var(--muted); font-size: 1.15rem; margin-top: 12px; max-width: 34em; }
+  .cards { display: grid; gap: 16px; margin-top: 48px; }
+  a.card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color .15s, transform .15s;
+  }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); transform: translateY(-2px); }
+  a.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .tag {
+    font-size: .75rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--leaf);
+  }
+  h2 { font-size: 1.6rem; margin: 6px 0 8px; }
+  .card p { color: var(--muted); }
+  .go { display: inline-block; margin-top: 14px; color: var(--accent); font-weight: 600; }
+  .go::after { content: " \2192"; }
+  footer { margin-top: 56px; color: var(--muted); font-size: .9rem; }
+  @media (prefers-reduced-motion: reduce) { a.card { transition: none; } a.card:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>clovermanhikes</h1>
+    <p class="lede">I take care of forests, make games about them, and build places for people to connect. Everything happens in the misty woods of Southwest Washington.</p>
+  </header>
+
+  <section class="cards" aria-label="My work">
+    <a class="card" href="https://grotnes.itch.io/">
+      <span class="tag">Games</span>
+      <h2>Grotnes Studio</h2>
+      <p>My one-person indie studio, named after my Norwegian grandma. Its first game is <em>Deadfall</em>, a first-person horror game about five night shifts as a park ranger in the Washington woods.</p>
+      <span class="go">Play on itch.io</span>
+    </a>
+
+    <a class="card" href="https://2slgbtqiapenpals.org">
+      <span class="tag">Community</span>
+      <h2>PenPal Board</h2>
+      <p>A cozy pen pal network for 2SLGBTQIA+ folks, made with love by trans folks.</p>
+      <span class="go">Find a pen pal</span>
+    </a>
+
+    <a class="card" href="https://cloverlandstewardship.com">
+      <span class="tag">Forestry</span>
+      <h2>Clover Land Stewardship</h2>
+      <p>Wildfire mitigation and ecological land management in Southwest Washington. Services include defensible space, fuel reduction, hazard tree assessments, and native planting plans.</p>
+      <span class="go">Visit the business</span>
+    </a>
+  </section>
+
+  <footer>
+    <p>Made by hand in Washington.</p>
+  </footer>
+</main>
+</body>
+</html>
